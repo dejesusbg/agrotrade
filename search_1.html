@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Agrotrade</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wdth,wght@8..144,100,400;8..144,100,500;8..144,112.5,400&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet" href="styles/material/button.css">
+    <link rel="stylesheet" href="styles/material/fab.css">
+    <link rel="stylesheet" href="styles/material/icon-button.css">
+    <link rel="stylesheet" href="styles/material/monet.css">
+    <link rel="stylesheet" href="styles/material/typography.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body onload="materialThemeCustom('#516818', '#996535');">
+    <header class="at-topbar">
+        <input class="at-searchbar" type="text" placeholder="Search products">
+        <button type="button" title="Button" class="md-icon-button">
+            <span class="md-icon-button__icon material-symbols-rounded">shopping_basket</span>
+        </button>
+    </header>
+
+    <nav class="at-navbar">
+        <div class="at-navbar__item">
+            <i class="material-symbols-rounded at-navbar__item__icon">home</i>
+        </div>
+        <div class="at-navbar__item at-navbar__item--selected">
+            <i class="material-symbols-rounded at-navbar__item__icon">search</i>
+        </div>
+        <div class="at-navbar__item">
+            <i class="material-symbols-rounded at-navbar__item__icon">account_circle</i>
+        </div>
+    </nav>
+
+    <main>
+        <span class="at-search-rec-title">History & trending</span>
+        <div class="at-search-rec">
+            <i class="material-symbols-rounded at-search-rec__icon">history</i>
+            <span class="at-search-rec__label">uchuva</span>
+            <i class="material-symbols-rounded at-search-rec__icon">navigate_next</i>
+        </div>
+        <div class="at-search-rec">
+            <i class="material-symbols-rounded at-search-rec__icon">history</i>
+            <span class="at-search-rec__label">granadilla</span>
+            <i class="material-symbols-rounded at-search-rec__icon">navigate_next</i>
+        </div>
+        <div class="at-search-rec">
+            <i class="material-symbols-rounded at-search-rec__icon">history</i>
+            <span class="at-search-rec__label">mango</span>
+            <i class="material-symbols-rounded at-search-rec__icon">navigate_next</i>
+        </div>
+        <div class="at-search-rec">
+            <i class="material-symbols-rounded at-search-rec__icon">history</i>
+            <span class="at-search-rec__label">guayaba</span>
+            <i class="material-symbols-rounded at-search-rec__icon">navigate_next</i>
+        </div>
+        <div class="at-search-rec">
+            <i class="material-symbols-rounded at-search-rec__icon">trending_up</i>
+            <span class="at-search-rec__label">tamarindo</span>
+            <i class="material-symbols-rounded at-search-rec__icon">navigate_next</i>
+        </div>
+        <div class="at-search-rec">
+            <i class="material-symbols-rounded at-search-rec__icon">trending_up</i>
+            <span class="at-search-rec__label">banano</span>
+            <i class="material-symbols-rounded at-search-rec__icon">navigate_next</i>
+        </div>
+        <div class="at-search-rec">
+            <i class="material-symbols-rounded at-search-rec__icon">trending_up</i>
+            <span class="at-search-rec__label">aguacate</span>
+            <i class="material-symbols-rounded at-search-rec__icon">navigate_next</i>
+        </div>
+    </main>
+
+    <script src="script/material/chroma.min.js"></script>
+    <script src="script/material/vibrant.min.js"></script>
+    <script src="script/material/monet.js"></script>
+    <script src="script/material/components.js"></script>
+    <script src="script/script.js"></script>
+
+    <script>
+        mdElevate('.md-demo-link');
+        mdTypography('.md-demo-link', 'title-m');
+    </script>
+</body>
+
+</html>

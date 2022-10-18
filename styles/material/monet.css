@@ -1,0 +1,78 @@
+* {
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    position: relative;
+}
+
+body {
+    background: var(--md-color-background);
+    color: var(--md-color-on-background);
+    overflow-x: hidden;
+}
+
+/* color system */
+.md-theme-light {
+    --md-color-primary: var(--primary-40);
+    --md-color-on-primary: var(--primary-100);
+    --md-color-primary-container: var(--primary-90);
+    --md-color-on-primary-container: var(--primary-10);
+    --md-color-secondary: var(--secondary-40);
+    --md-color-on-secondary: var(--secondary-100);
+    --md-color-secondary-container: var(--secondary-90);
+    --md-color-on-secondary-container: var(--secondary-10);
+    --md-color-tertiary: var(--tertiary-40);
+    --md-color-on-tertiary: var(--tertiary-100);
+    --md-color-tertiary-container: var(--tertiary-90);
+    --md-color-on-tertiary-container: var(--tertiary-10);
+    --md-color-background: var(--neutral-99);
+    --md-color-on-background: var(--neutral-10);
+    --md-color-surface: var(--neutral-99);
+    --md-color-on-surface: var(--neutral-10);
+    --md-color-surface-variant: var(--neutral-variant-90);
+    --md-color-on-surface-variant: var(--neutral-variant-30);
+    --md-color-outline: var(--neutral-variant-50);
+    --md-color-inverse-surface: var(--neutral-20);
+    --md-color-inverse-on-surface: var(--neutral-95);
+}
+
+.md-theme-dark {
+    --md-color-primary: var(--primary-80);
+    --md-color-on-primary: var(--primary-20);
+    --md-color-primary-container: var(--primary-30);
+    --md-color-on-primary-container: var(--primary-90);
+    --md-color-secondary: var(--secondary-80);
+    --md-color-on-secondary: var(--secondary-20);
+    --md-color-secondary-container: var(--secondary-30);
+    --md-color-on-secondary-container: var(--secondary-90);
+    --md-color-tertiary: var(--tertiary-80);
+    --md-color-on-tertiary: var(--tertiary-20);
+    --md-color-tertiary-container: var(--tertiary-30);
+    --md-color-on-tertiary-container: var(--tertiary-90);
+    --md-color-background: var(--neutral-10);
+    --md-color-on-background: var(--neutral-90);
+    --md-color-surface: var(--neutral-10);
+    --md-color-on-surface: var(--neutral-90);
+    --md-color-surface-variant: var(--neutral-variant-30);
+    --md-color-on-surface-variant: var(--neutral-variant-80);
+    --md-color-outline: var(--neutral-variant-60);
+    --md-color-inverse-surface: var(--neutral-90);
+    --md-color-inverse-on-surface: var(--neutral-10);
+}
+
+/*  elevation */
+.md-elevation {
+    transform: translate3d(0, 0, 0);
+    overflow: overlay;
+}
+
+.md-elevation::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+}

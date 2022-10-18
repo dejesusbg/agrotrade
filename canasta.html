@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Agrotrade</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wdth,wght@8..144,100,400;8..144,100,500;8..144,112.5,400&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet" href="styles/material/button.css">
+    <link rel="stylesheet" href="styles/material/fab.css">
+    <link rel="stylesheet" href="styles/material/icon-button.css">
+    <link rel="stylesheet" href="styles/material/monet.css">
+    <link rel="stylesheet" href="styles/material/typography.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body onload="materialThemeCustom('#516818', '#996535');">
+    <header class="at-topbar">
+        <img class="at-topbar__logo" src="img/logo_3000x3000_tr.png" alt="logo" height="40">
+        <span class="at-topbar__title">Shop basket</span>
+        <button type="button" title="Button" class="md-text-button">
+            <span class="md-button__label">Select</span>
+        </button>
+    </header>
+
+    <nav class="at-navbar">
+        <div class="at-navbar__item at-navbar__item--selected">
+            <i class="material-symbols-rounded at-navbar__item__icon">home</i>
+        </div>
+        <div class="at-navbar__item">
+            <i class="material-symbols-rounded at-navbar__item__icon">search</i>
+        </div>
+        <div class="at-navbar__item">
+            <i class="material-symbols-rounded at-navbar__item__icon">account_circle</i>
+        </div>
+    </nav>
+
+    <button type="button" title="Button" class="at-fab md-fab md-tertiary-fab md-extended-fab">
+        <span class="md-fab__icon material-symbols-rounded">payments</span>
+        <span class="md-fab__label">Comprar</span>
+    </button>
+
+    <main>
+
+        <div class="at-search-res">
+            <div class="at-search-res__product"></div>
+            <div class="at-search-res__info">
+                <span class="at-search-res__name">Uchuva fresca por kilogramo</span>
+                <span class="at-search-res__stars">x 40 unidades</span>
+                <span class="at-search-res__price">$ 9.780 c/u</span>
+            </div>
+        </div>
+        <div class="at-search-res">
+            <div class="at-search-res__product"></div>
+            <div class="at-search-res__info">
+                <span class="at-search-res__name">Mango por 1/2 tonelada</span>
+                <span class="at-search-res__stars">x 1 unidad</span>
+                <span class="at-search-res__price">$ 870.000 c/u</span>
+            </div>
+        </div>
+        <div class="at-search-res">
+            <div class="at-search-res__product"></div>
+            <div class="at-search-res__info">
+                <span class="at-search-res__name">Guayaba por 1 tonelada métrica</span>
+                <span class="at-search-res__stars">x 2 unidad</span>
+                <span class="at-search-res__price">$ 1'383.000 c/u</span>
+            </div>
+        </div>
+    </main>
+
+    <script src="script/material/chroma.min.js"></script>
+    <script src="script/material/vibrant.min.js"></script>
+    <script src="script/material/monet.js"></script>
+    <script src="script/material/components.js"></script>
+    <script src="script/script.js"></script>
+
+    <script>
+        mdElevate('.md-demo-link');
+        mdTypography('.md-demo-link', 'title-m');
+    </script>
+</body>
+
+</html>
