@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Agrotrade</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wdth,wght@8..144,100,400;8..144,100,500;8..144,112.5,400&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet" href="styles/material/button.css">
+    <link rel="stylesheet" href="styles/material/fab.css">
+    <link rel="stylesheet" href="styles/material/icon-button.css">
+    <link rel="stylesheet" href="styles/material/monet.css">
+    <link rel="stylesheet" href="styles/material/typography.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body onload="materialThemeCustom('#516818', '#996535');">
+    <header class="at-topbar">
+        <input class="at-searchbar" type="text" placeholder="Busca frutas, verduras y mas" value="uchuva">
+        <button type="button" title="Button" class="md-icon-button">
+            <span class="md-icon-button__icon material-symbols-rounded">filter_alt</span>
+        </button>
+        <button type="button" title="Button" class="md-icon-button">
+            <span class="md-icon-button__icon material-symbols-rounded">shopping_basket</span>
+        </button>
+    </header>
+
+    <nav class="at-navbar">
+        <div class="at-navbar__item">
+            <i class="material-symbols-rounded at-navbar__item__icon">home</i>
+        </div>
+        <div class="at-navbar__item at-navbar__item--selected">
+            <i class="material-symbols-rounded at-navbar__item__icon">search</i>
+        </div>
+        <div class="at-navbar__item">
+            <i class="material-symbols-rounded at-navbar__item__icon">account_circle</i>
+        </div>
+    </nav>
+
+    <main>
+        <span class="at-title">Resultados de búsqueda</span>
+        <div class="at-prod">
+            <img class="at-prod__product" src="https://plazamercado.shop/wp-content/uploads/2020/07/Uchuva-2.jpg" alt="img">
+            <div class="at-prod__info">
+                <span class="at-prod__name">Uchuva fresca por kilogramo</span>
+                <span class="at-prod__price">$ 9.780</span>
+                <span class="at-prod__stars"><i class="material-symbols-rounded">stars</i> 4,0</span>
+            </div>
+        </div>
+        <div class="at-prod">
+            <img class="at-prod__product" src="https://http2.mlstatic.com/D_NQ_NP_971839-MCO46335469849_062021-O.webp" alt="img">
+            <div class="at-prod__info">
+                <span class="at-prod__name">50 semillas uchuva orgánica para maceta o huerta</span>
+                <span class="at-prod__price">$ 7.350</span>
+                <span class="at-prod__stars"><i class="material-symbols-rounded">stars</i> 3,6</span>
+            </div>
+        </div>
+        <div class="at-prod">
+            <img class="at-prod__product" src="https://carulla.vtexassets.com/arquivos/ids/6745931/Uchuva-Sin-Capacho-400g-1851_b.jpg?v=637750840518970000" alt="img">
+            <div class="at-prod__info">
+                <span class="at-prod__name">Uchuva sin capacho x 1kg</span>
+                <span class="at-prod__price">$ 7,440</span>
+                <span class="at-prod__stars"><i class="material-symbols-rounded">stars</i> 4,8</span>
+            </div>
+        </div>
+        <div class="at-prod">
+            <img class="at-prod__product" src="https://http2.mlstatic.com/D_NQ_NP_874356-MCO43558641565_092020-O.jpg" alt="img">
+            <div class="at-prod__info">
+                <span class="at-prod__name">750 semillas de fruta uchuva + kit de germinación</span>
+                <span class="at-prod__price">$ 30.350</span>
+                <span class="at-prod__stars"><i class="material-symbols-rounded">stars</i> 4,3</span>
+            </div>
+        </div>
+    </main>
+
+    <script src="script/material/chroma.min.js"></script>
+    <script src="script/material/vibrant.min.js"></script>
+    <script src="script/material/monet.js"></script>
+    <script src="script/material/components.js"></script>
+    <script src="script/script.js"></script>
+
+    <script>
+        mdElevate('.md-demo-link');
+        mdTypography('.md-demo-link', 'title-m');
+    </script>
+</body>
+
+</html>

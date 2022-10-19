@@ -1,4 +1,5 @@
 toggleColorScheme()
+mdTypography(".at-title", "title-l")
 
 // top app bar
 function scrollTopbar() {
@@ -13,18 +14,24 @@ scrollTopbar()
 window.addEventListener("scroll", scrollTopbar);
 mdElevate(".at-topbar")
 mdTypography(".at-topbar__title", "headline-m")
+mdTypography(".at-searchbar", "body-m")
 
 // home categories
 mdElevate(".at-cat")
 mdTypography(".at-cat__title", "title-l")
 mdTypography(".at-cat__description", "body-m")
 
-// search bar
+// navbar
+mdElevate(".at-navbar")
 
-mdElevate(".at-search-rec,  .at-search-res, .at-profile__section")
-mdTypography(".at-search-rec-title, .at-search-res-title", "title-l")
-mdTypography(".at-searchbar", "body-m")
-mdTypography(".at-search-res__name, .at-profile__name", "headline-s")
-mdTypography(".at-search-res__price, .at-profile__location", "title-l")
-mdTypography(".at-search-res__stars, .at-profile__stars", "label-l")
-mdTypography(".at-profile__section__label", "title-m")
+// history
+mdElevate(".at-li")
+
+// results
+mdElevate(".at-prod, .at-tile")
+mdTypography(".at-prod__name, .at-profile__name", "headline-s")
+mdTypography(".at-prod__price, .at-profile__location", "title-l")
+mdTypography(".at-prod__stars, .at-profile__stars", "label-l")
+
+// more
+mdTypography(".at-tile__label", "title-m")
