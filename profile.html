@@ -11,12 +11,12 @@
         href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wdth,wght@8..144,100,400;8..144,100,500;8..144,112.5,400&display=swap">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
-    <link rel="stylesheet" href="styles/material/button.css">
-    <link rel="stylesheet" href="styles/material/fab.css">
-    <link rel="stylesheet" href="styles/material/icon-button.css">
-    <link rel="stylesheet" href="styles/material/monet.css">
-    <link rel="stylesheet" href="styles/material/typography.css">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="css/material-you/button.css">
+    <link rel="stylesheet" href="css/material-you/fab.css">
+    <link rel="stylesheet" href="css/material-you/icon-button.css">
+    <link rel="stylesheet" href="css/material-you/monet.css">
+    <link rel="stylesheet" href="css/material-you/typography.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body onload="materialThemeCustom('#516818', '#996535');">
@@ -50,11 +50,11 @@
 
     <main>
         <div class="at-profile__info">
-            <img class="at-profile__pic" src="img/pfp.jpg" alt="pfp">
+            <img class="at-profile__img" src="img/pfp.jpg" alt="pfp">
             <div class="at-profile__data">
-                <span class="at-profile__name">Nombre</span>
-                <span class="at-profile__location">Ubicación</span>
-                <span class="at-profile__stars"><i class="material-symbols-rounded">stars</i> 4,5</span>
+                <span class="at-title">Nombre</span>
+                <span class="at-headline">Ubicación</span>
+                <span class="at-label"><i class="at-icon material-symbols-rounded">stars</i> 4,5</span>
             </div>
         </div>
 
@@ -72,28 +72,15 @@
         </div>
         <div class="at-tile">
             <i class="material-symbols-rounded at-tile__icon">security</i>
-            <span class="at-tile__label">Seguridad</span>
-        </div>
-        <div class="at-tile">
-            <i class="material-symbols-rounded at-tile__icon">lock</i>
-            <span class="at-tile__label">Privacidad</span>
-        </div>
-        <div class="at-tile">
-            <i class="material-symbols-rounded at-tile__icon">credit_card</i>
-            <span class="at-tile__label">Métodos de pago</span>
+            <span class="at-tile__label">Privacidad y seguridad</span>
         </div>
     </main>
 
-    <script src="script/material/chroma.min.js"></script>
-    <script src="script/material/vibrant.min.js"></script>
-    <script src="script/material/monet.js"></script>
-    <script src="script/material/components.js"></script>
-    <script src="script/script.js"></script>
-
-    <script>
-        mdElevate('.md-demo-link');
-        mdTypography('.md-demo-link', 'title-m');
-    </script>
+    <script src="js/material-you/chroma.min.js"></script>
+    <script src="js/material-you/vibrant.min.js"></script>
+    <script src="js/material-you/monet.js"></script>
+    <script src="js/material-you/components.js"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>

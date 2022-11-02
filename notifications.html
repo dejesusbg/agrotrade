@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE htsrc="ml>
+<html lang=" en">
 
 <head>
     <meta charset="utf-8">
@@ -11,84 +11,66 @@
         href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wdth,wght@8..144,100,400;8..144,100,500;8..144,112.5,400&display=swap">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
-    <link rel="stylesheet" href="styles/material/button.css">
-    <link rel="stylesheet" href="styles/material/fab.css">
-    <link rel="stylesheet" href="styles/material/icon-button.css">
-    <link rel="stylesheet" href="styles/material/monet.css">
-    <link rel="stylesheet" href="styles/material/typography.css">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="css/material-you/button.css">
+    <link rel="stylesheet" href="css/material-you/fab.css">
+    <link rel="stylesheet" href="css/material-you/icon-button.css">
+    <link rel="stylesheet" href="css/material-you/monet.css">
+    <link rel="stylesheet" href="css/material-you/typography.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body onload="materialThemeCustom('#516818', '#996535');">
     <header class="at-topbar">
-        <img class="at-topbar__logo" src="img/logo_3000x3000_tr.png" alt="logo" height="40">
+        <button type="button" title="Button" class="md-icon-button" onclick="history.back()">
+            <span class="md-icon-button__icon material-symbols-rounded">arrow_back</span>
+        </button>
         <span class="at-topbar__title">Notificaciones</span>
+        </button>
     </header>
-
-    <nav class="at-navbar">
-        <div class="at-navbar__item">
-            <i class="material-symbols-rounded at-navbar__item__icon">home</i>
-        </div>
-        <div class="at-navbar__item at-navbar__item--selected">
-            <i class="material-symbols-rounded at-navbar__item__icon">search</i>
-        </div>
-        <div class="at-navbar__item">
-            <i class="material-symbols-rounded at-navbar__item__icon">account_circle</i>
-        </div>
-    </nav>
 
     <main>
         <span class="at-title">Reciente</span>
-        <div class="at-li">
+        <div class="at-li" onclick="location.href='../product/product.html'">
             <i class="material-symbols-rounded at-li__icon">favorite</i>
             <span class="at-li__label">Juan y 34 personas más agregaron tu producto a favoritos</span>
             <i class="material-symbols-rounded at-li__icon">navigate_next</i>
         </div>
-        <div class="at-li">
+        <div class="at-li" onclick="location.href='../product/status.html'">
             <i class="material-symbols-rounded at-li__icon">local_shipping</i>
             <span class="at-li__label">La llegada estimada de tu pedido es mañana</span>
             <i class="material-symbols-rounded at-li__icon">navigate_next</i>
         </div>
         <span class="at-title">Ayer</span>
-        <div class="at-li">
+        <div class="at-li" onclick="location.href='../product/product.html'">
             <i class="material-symbols-rounded at-li__icon">loyalty</i>
             <span class="at-li__label">Recibiste 11 compras de tu producto</span>
             <i class="material-symbols-rounded at-li__icon">navigate_next</i>
         </div>
         <span class="at-title">Esta semana</span>
-        <div class="at-li">
+        <div class="at-li" onclick="location.href='../product/status.html'">
             <i class="material-symbols-rounded at-li__icon">payments</i>
-            <span class="at-li__label">El pago de tu pedido se realizó exitóamente</span>
+            <span class="at-li__label">El pago de tu pedido se realizó exitósamente</span>
             <i class="material-symbols-rounded at-li__icon">navigate_next</i>
         </div>
-        <div class="at-li">
+        <div class="at-li" onclick="location.href='offers.html'">
             <i class="material-symbols-rounded at-li__icon">campaign</i>
-            <span class="at-li__label">Compra de las frutas seleccionadas con hasta un 50 % de descuento y envío gratis</span>
+            <span class="at-li__label">Compra de las frutas seleccionadas con hasta un 50 % de descuento y envío
+                gratis</span>
             <i class="material-symbols-rounded at-li__icon">navigate_next</i>
         </div>
         <span class="at-title">Este mes</span>
-        <div class="at-li">
+        <div class="at-li" onclick="location.href='../product/product.html'">
             <i class="material-symbols-rounded at-li__icon">favorite</i>
             <span class="at-li__label">Alejandra y 10 personas más agregaron tu producto a favoritos</span>
             <i class="material-symbols-rounded at-li__icon">navigate_next</i>
         </div>
-        <div class="at-li">
-            <i class="material-symbols-rounded at-li__icon">trending_up</i>
-            <span class="at-li__label">aguacate</span>
-            <i class="material-symbols-rounded at-li__icon">navigate_next</i>
-        </div>
     </main>
 
-    <script src="script/material/chroma.min.js"></script>
-    <script src="script/material/vibrant.min.js"></script>
-    <script src="script/material/monet.js"></script>
-    <script src="script/material/components.js"></script>
-    <script src="script/script.js"></script>
-
-    <script>
-        mdElevate('.md-demo-link');
-        mdTypography('.md-demo-link', 'title-m');
-    </script>
+    <script src="js/material-you/chroma.min.js"></script>
+    <script src="js/material-you/vibrant.min.js"></script>
+    <script src="js/material-you/monet.js"></script>
+    <script src="js/material-you/components.js"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>

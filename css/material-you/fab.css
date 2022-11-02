@@ -1,0 +1,107 @@
+.md-fab {
+    /* position: fixed; */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: var(--md-shape-corner-l);
+    margin: 1rem;
+    background: var(--md-color-primary-container);
+    height: 3.5rem;
+    width: 3.5rem;
+    color: var(--md-color-on-primary-container);
+    box-shadow: 0px 1px 3.5px -2px black;
+    cursor: pointer;
+    position: fixed;
+    z-index: 10;
+}
+
+.md-fab__icon {
+    font-size: 1.5rem;
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 600,
+        'GRAD' 0,
+        'opsz' 48
+}
+
+/* FAB sizes */
+.md-small-fab {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: var(--md-shape-corner-m);
+}
+
+.md-large-fab {
+    height: 6rem;
+    width: 6rem;
+    border-radius: var(--md-shape-corner-xl);
+}
+
+.md-large-fab .md-fab__icon {
+    font-size: 2rem;
+}
+
+/* FAB colors */
+.md-fab::before {
+    background: var(--md-color-on-primary-container);
+    opacity: 5%;
+}
+
+.md-fab:hover::before {
+    opacity: 8%;
+}
+
+.md-fab:active::before {
+    opacity: 11%;
+}
+
+.md-surface-fab {
+    background: var(--md-color-surface);
+    color: var(--md-color-primary);
+}
+
+.md-surface-fab::before {
+    background: var(--md-color-primary);
+}
+
+.md-secondary-fab {
+    background: var(--md-color-secondary-container);
+    color: var(--md-color-on-secondary-container);
+}
+
+.md-secondary-fab::before {
+    background: var(--md-color-on-secondary-container);
+}
+
+.md-tertiary-fab {
+    background: var(--md-color-tertiary-container);
+    color: var(--md-color-on-tertiary-container);
+}
+
+.md-tertiary-fab::before {
+    background: var(--md-color-on-tertiary-container);
+}
+
+/* Extended FAB */
+.md-extended-fab {
+    min-width: 5rem;
+    width: unset;
+}
+
+.md-extended-fab .md-fab__icon {
+    margin: 0 .75rem;
+}
+
+.md-fab__label {
+    margin: 0 1rem;
+}
+
+.md-fab__icon+.md-fab__label {
+    margin-left: 0;
+}
+
+[dir=rtl] .md-fab__icon+.md-fab__label {
+    margin-right: 0;
+    margin-left: 1rem;
+}
