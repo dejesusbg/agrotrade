@@ -66,5 +66,5 @@ As this is a static frontend project, no build process or server is required to 
 
 ## Screenshots
 
-![Search](./search.png)
-![Notifications](./notifications.png)
+![Search](./img/search.png)
+![Notifications](./img/notifications.png)
